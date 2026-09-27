@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-repeat: repeat;
+    background-size: cover;
+    color: #333;
+    padding: 20px;
+}
+
+.contenido {
+    background-image: url(imagenes/fondo.jpg); /*Imagen de fondo*/
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px 30px;
+    border-radius: 8px;
+}
+
+/* Encabezado */
+.encabesado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.logo-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.titulo {
+    color: #0099e6;
+    font-size: 28px;
+}
+
+.autor {
+    text-align: right;
+    font-style: italic;
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+/* Secciones generales */
+.seccion {
+    margin-bottom: 30px;
+}
+
+.seccion-titulo {
+    text-decoration: underline;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.intro-texto {
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+/* Grid para las tarjetas */
+.cuadricula-contenido {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.tarjeta {
+    border: 1px solid #777;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+}
+
+.tarjeta-encabesado {
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.bg-red { background-color: #e44d26; }
+.bg-blue { background-color: #0270bb; }
+.bg-green { background-color: #7bb026; }
+
+.tarjeta-body {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.tarjeta-body p {
+    font-size: 13px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.texto-sm p {
+    font-size: 12px;
+}
+
+.resaltador-amarillo {
+    background-color: #ffff00;
+}
+
+.tarjeta-img {
+    display: block;
+    max-width: 100px;
+    margin: 10px auto 0 auto;
+}
+
+/* Imagen de las casas */
+.casa-img-contenido {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.casa-img {
+    max-width: 450px;
+    width: 100%;
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Resumen */
+.resumen-box {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-style: italic;
+    font-size: 13px;
+}
